@@ -8,6 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel Padding="10">
+            <Button Content="SplitView" Click="SplitView_Click" />
+        </StackPanel>
     </Grid>
 </Page>
