@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <SplitView Name="Split" OpenPaneLength="200" IsPaneOpen="False" DisplayMode="Overlay">
+        <SplitView Name="Split" PanePlacement="Right" OpenPaneLength="200" IsPaneOpen="False" DisplayMode="Inline">
             <SplitView.Pane>
                 <StackPanel Padding="10">
                     <TextBlock Text="Item 1" />
