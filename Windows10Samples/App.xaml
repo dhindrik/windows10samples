@@ -4,5 +4,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Windows10Samples"
     RequestedTheme="Light">
-
+    <Application.Resources>
+        <Style TargetType="Pivot">
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Grid>
+                            <TextBlock FontSize="18" Foreground="Blue" Text="{Binding}" />
+                        </Grid>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
 </Application>
