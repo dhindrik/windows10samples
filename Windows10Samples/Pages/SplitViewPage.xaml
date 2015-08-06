@@ -25,17 +25,17 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     
-                    <SymbolIcon HorizontalAlignment="Left" Foreground="Gold" Symbol="Favorite"></SymbolIcon>
+                    <SymbolIcon HorizontalAlignment="Left" Foreground="Gold" Symbol="Favorite"/>
                     <TextBlock Grid.Column="1" Text="Favorites" />
                     
-                    <SymbolIcon Grid.Row="2" HorizontalAlignment="Left" Foreground="Red" Symbol="Sync"></SymbolIcon>
+                    <SymbolIcon Grid.Row="2" HorizontalAlignment="Left" Foreground="Red" Symbol="Sync" />
                     <TextBlock Grid.Column="1" Grid.Row="2" Text="Sync" />
 
-                    <SymbolIcon Grid.Row="4" HorizontalAlignment="Left" Foreground="Green" Symbol="Save"></SymbolIcon>
+                    <SymbolIcon Grid.Row="4" HorizontalAlignment="Left" Foreground="Green" Symbol="Save" />
                     <TextBlock Grid.Column="1" Grid.Row="4" Text="Save" />
 
-                    <SymbolIcon Grid.Row="6" HorizontalAlignment="Left" Symbol="Setting"></SymbolIcon>
-                    <TextBlock Grid.Column="1" Grid.Row="6" Text="Save" />
+                    <SymbolIcon Grid.Row="6" HorizontalAlignment="Left" Symbol="Setting" />
+                    <TextBlock Grid.Column="1" Grid.Row="6" Text="Settings" />
                 </Grid>
             </SplitView.Pane>
             <Grid>
