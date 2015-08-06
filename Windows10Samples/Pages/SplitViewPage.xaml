@@ -8,14 +8,35 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <SplitView Name="Split" PanePlacement="Right" OpenPaneLength="200" IsPaneOpen="False" DisplayMode="Inline">
+        <SplitView Name="Split" PanePlacement="Left" OpenPaneLength="200" IsPaneOpen="False" DisplayMode="Inline">
             <SplitView.Pane>
-                <StackPanel Padding="10">
-                    <TextBlock Text="Item 1" />
-                    <TextBlock Margin="0,10" Text="Item 2" />
-                    <TextBlock Text="Item 3" />
-                    <TextBlock Margin="0,10" Text="Item 4" />
-                </StackPanel>
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <SymbolIcon HorizontalAlignment="Left" Foreground="Gold" Symbol="Favorite"></SymbolIcon>
+                    <TextBlock Grid.Column="1" Text="Favorites" />
+                    
+                    <SymbolIcon Grid.Row="2" HorizontalAlignment="Left" Foreground="Red" Symbol="Sync"></SymbolIcon>
+                    <TextBlock Grid.Column="1" Grid.Row="2" Text="Sync" />
+
+                    <SymbolIcon Grid.Row="4" HorizontalAlignment="Left" Foreground="Green" Symbol="Save"></SymbolIcon>
+                    <TextBlock Grid.Column="1" Grid.Row="4" Text="Save" />
+
+                    <SymbolIcon Grid.Row="6" HorizontalAlignment="Left" Symbol="Setting"></SymbolIcon>
+                    <TextBlock Grid.Column="1" Grid.Row="6" Text="Save" />
+                </Grid>
             </SplitView.Pane>
             <Grid>
                 <Grid.RowDefinitions>
